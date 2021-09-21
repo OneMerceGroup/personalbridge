@@ -1,0 +1,24 @@
+.theme-flatsome .nf-product-single input, 
+.theme-flatsome #pb-artwork-form input, 
+.theme-flatsome .nf-product-single select, 
+.theme-flatsome #pb-artwork-form select{
+	padding: 0 .75em;
+}
+
+.theme-flatsome .nf-product-single .cart-qty select,
+.theme-flatsome .nf-product-single .cart-qty input{
+	height: unset;
+	padding: 14px 10px;
+}
+
+.theme-flatsome .nf-product-single .btn-add-to-cart,
+.theme-flatsome .nf-product-single button.btn-preview{
+	padding: 14px 10px;
+    height: unset;
+    min-height: unset;
+    line-height: normal;
+}
+.theme-flatsome .nf-product-single button.btn-preview {
+	background: #ddd;
+    border: 1px solid #d8d4d4;
+}
