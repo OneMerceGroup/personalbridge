@@ -35,28 +35,23 @@ class PersonalBridge {
 		add_filter( 'woocommerce_get_item_data', array( $this, 'woo_get_item_data' ), 25, 2 );
 		add_action( 'woocommerce_add_order_item_meta', array( $this, 'woo_add_order_item_meta' ), 10, 2 );
 
-		// woocommerce_before_main_content
-		add_action(
-			'woocommerce_single_product_summary',
-			function() {
-				if ( function_exists( 'flatsome_option' ) && $this->is_pb() ) {
-					echo '<div class="nf-product-single" id="personalbridge-product-section">';
-				}
-			},
-			0
-		);
+		// woocommerce_before_main_content.
+		add_action( 'woocommerce_single_product_summary', array( $this, 'woo_single_product_summary_open' ), 0 );
 
-		// woocommerce_after_main_content
-		add_action(
-			'woocommerce_single_product_summary',
-			function() {
-				if ( function_exists( 'flatsome_option' ) && $this->is_pb() ) {
-					echo '</div>';
-				}
-			},
-			PHP_INT_MAX
-		);
+		// woocommerce_after_main_content.
+		add_action( 'woocommerce_single_product_summary', array( $this, 'woo_single_product_summary_close' ), PHP_INT_MAX );
+	}
 
+	public function woo_single_product_summary_open() {
+		if ( function_exists( 'flatsome_option' ) && $this->is_pb() ) {
+			echo '<div class="nf-product-single" id="personalbridge-product-section">';
+		}
+	}
+
+	public function woo_single_product_summary_close() {
+		if ( function_exists( 'flatsome_option' ) && $this->is_pb() ) {
+			echo '</div>';
+		}
 	}
 
 	function woo_add_order_item_meta( $item_id, $values ) {
@@ -72,7 +67,7 @@ class PersonalBridge {
 		if ( isset( $cart_item ['_personalbridge_preview'] ) && ! empty( $cart_item ['_personalbridge_preview'] ) ) {
 			$other_data[] = array(
 				'name'    => 'Preview',
-				'display' => '<img src="' . $cart_item['_personalbridge_preview'] . '"/>',
+				'display' => '<img src="' . esc_url( $cart_item['_personalbridge_preview'] ) . '"/>',
 			);
 		}
 		return $other_data;
@@ -81,10 +76,12 @@ class PersonalBridge {
 	public function woo_add_cart_item_data( $cart_item_meta, $product_id ) {
 		if ( isset( $_POST['properties'] ) && is_array( $_POST['properties'] ) ) {
 			if ( isset( $_POST['properties']['_personalbridgecustomid'] ) && ! empty( $_POST['properties']['_personalbridgecustomid'] ) ) {
-				$cart_item_meta['_personalbridgecustomid'] = stripslashes( wp_unslash( $_POST['properties']['_personalbridgecustomid'] ) );
+				$customid                                  = sanitize_key( wp_unslash( $_POST['properties']['_personalbridgecustomid'] ) );
+				$cart_item_meta['_personalbridgecustomid'] = stripslashes( $customid );
 			}
 			if ( isset( $_POST['properties']['_personalbridge_preview'] ) && ! empty( $_POST['properties']['_personalbridge_preview'] ) ) {
-				$cart_item_meta['_personalbridge_preview'] = stripslashes( wp_unslash( $_POST['properties']['_personalbridge_preview'] ) );
+				$preview                                   = esc_url_raw( wp_unslash( $_POST['properties']['_personalbridge_preview'] ) );
+				$cart_item_meta['_personalbridge_preview'] = stripslashes( $preview );
 			}
 		}
 		return $cart_item_meta;

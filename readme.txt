@@ -1,21 +1,39 @@
 === PersonalBridge ===
 Contributors: personalbridge
 Donate link: https://personalbridge.com/
-Tags: woocommerce, personalbridge, personalized
+Tags: woocommerce, personalbridge, personalized, product personalizer, product designer, web to print, customize product, POD product, Print‑on‑Demand, fulfillment
 Requires at least: 5.8
 Requires PHP: 5.6
 Tested up to: 5.8
-Stable tag: 5.8
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Design, sell, and print personal products faster plugin for WooCommerce with PersonalBridge
 
 == Description ==
+The <strong>PersonalBridge</strong> is a plugin for WooCommerce, this plugin allows you sell personalized print-on-demand products on WooComemrce. Your customer can change text, change cliaprt, upload custom photo and live preview before buying.
 
-Design, sell, and print personal products faster plugin for WooCommerce with PersonalBridge.
+<strong>Ready-for-print:</strong> Your orders will be sent to PersonalBridge and PersonalBridge automatically create ready-for-print print files for your orders, you only need to download file PNG with 300 DPI.
 
-Powers features
+<strong>Fulfillment services integrations:</strong> import product catalogs from your favorite fulfillment services and create personalized campaigns using PersonalBridge. Your orders are fulfilled and shipped by your favorite services such as Customcat, Gearment, Dreamship, Scalable Press, Merchize... We also provide custom order CSV with ready-to-print files for other fulfillments such as Printify, Printful ....
+
+[youtube https://www.youtube.com/watch?v=9KBt4d59lTM]
+
+Try our [live demo](https://woo.personalbridge.com/)
+
+Website: [Plugin site](https://personalbridge.com/)
+
+Privacy Policies: [Privacy Policies](https://personalbridge.com/privacy-policy/)
+
+Terms & Conditions: [Terms & Conditions](https://personalbridge.com/terms-conditions/)
+
+### View our tutorial videos
+[youtube https://www.youtube.com/channel/UCANC566iEL-1ecyQ9uQ-gyQ]
+
+Note: Pluign not support with website on localhost
+
+### Powers features
 + Upload cliparts from folder
 + Create mockup from PSD
 + Artwork Templates from PSD
@@ -29,12 +47,15 @@ Powers features
 
 1. Upload `personalbridge` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Create an account on [https://dashboard.merchbridge.com](https://dashboard.merchbridge.com) and complete install.
 
 == Frequently asked questions ==
 
-= A question that someone might have =
+= Is it compatible with any kinds of WooCommerce Theme? =
+Yes, it's compatible with any WooCommerce theme including Flatsome / OceanWP / Astra / Storefront... But sometimes it may require small css tweak.
 
-An answer to that question.
+= Where can I find documentation and user guides? =
+View document online [https://support.personalbridge.com](https://support.personalbridge.com)
 
 == Screenshots ==
 
@@ -54,8 +75,7 @@ An answer to that question.
 
 == Upgrade notice ==
 = 1.0.0 =
-This version requires PHP5.6 or newer.
+This version requires PHP 5.6 or newer.
 
 
-== Arbitrary section 1 ==
 
