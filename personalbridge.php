@@ -43,13 +43,13 @@ class PersonalBridge {
 	}
 
 	public function woo_single_product_summary_open() {
-		if ( function_exists( 'flatsome_option' ) && $this->is_pb() ) {
+		if ( $this->is_flatsome() && $this->is_pb() ) {
 			echo '<div class="nf-product-single" id="personalbridge-product-section">';
 		}
 	}
 
 	public function woo_single_product_summary_close() {
-		if ( function_exists( 'flatsome_option' ) && $this->is_pb() ) {
+		if ( $this->is_flatsome() && $this->is_pb() ) {
 			echo '</div>';
 		}
 	}
@@ -102,7 +102,7 @@ class PersonalBridge {
 
 		$wrapper_class = 'nf-product-single';
 		$wrapper_id    = 'personalbridge-product-section';
-		if ( function_exists( 'flatsome_option' ) ) {
+		if ( $this->is_flatsome() ) {
 			$wrapper_class = 'nf-product-single-gallery';
 			$wrapper_id    = 'personalbridge-product-section-gallery';
 		}
@@ -112,7 +112,7 @@ class PersonalBridge {
 					<div id="artwork-preview">
 					</div>
 			  </div>';
-		if ( function_exists( 'flatsome_option' ) ) { // is using flatsome theme.
+		if ( $this->is_flatsome() ) { // is using flatsome theme.
 			echo '</div>';
 		}
 	}
@@ -176,10 +176,33 @@ class PersonalBridge {
 	}
 
 	public function is_pb() {
-		if ( class_exists( 'WC_Product' ) && get_the_ID() > 0 ) {
-			$product = new WC_Product( get_the_ID() );
-			$pb_meta = $product->get_meta( 'personalbridge' );
-			if ( ! empty( $pb_meta ) ) {
+		if ( class_exists( 'WC_Product' ) ) {
+			global $product;
+			if ( is_object( $product ) && method_exists( $product, 'get_meta' ) ) {
+				$pb_meta = $product->get_meta( 'personalbridge' );
+				if ( ! empty( $pb_meta ) ) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+
+	public function is_flatsome() {
+		$theme_slug = 'flatsome';
+		if ( function_exists( 'flatsome_option' ) ) {
+			return true;
+		}
+
+		if ( false !== strpos( get_option( 'template' ), $theme_slug ) ) {
+			return true;
+		}
+
+		$theme = wp_get_theme();
+		if ( is_object( $theme ) && property_exists( $theme, 'name' ) ) {
+			$theme_name        = strtolower( $theme->name );
+			$theme_parent_name = strtolower( $theme->parent_theme );
+			if ( false !== strpos( $theme_name, $theme_slug ) || false !== strpos( $theme_parent_name, $theme_slug ) ) {
 				return true;
 			}
 		}
