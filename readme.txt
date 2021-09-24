@@ -12,7 +12,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Design, sell, and print personal products faster plugin for WooCommerce with PersonalBridge
 
 == Description ==
-The <strong>PersonalBridge</strong> is a plugin for WooCommerce, this plugin allows you sell personalized print-on-demand products on WooComemrce. Your customer can change text, change cliaprt, upload custom photo and live preview before buying.
+The <strong>PersonalBridge</strong> is a plugin for WooCommerce, this plugin allows you sell personalized print-on-demand products on WooComemrce. Your customer can change text, change clipart, upload custom photo and live preview before buying.
 
 <strong>Ready-for-print:</strong> Your orders will be sent to PersonalBridge and PersonalBridge automatically create ready-for-print print files for your orders, you only need to download file PNG with 300 DPI.
 
@@ -20,9 +20,9 @@ The <strong>PersonalBridge</strong> is a plugin for WooCommerce, this plugin all
 
 [youtube https://www.youtube.com/watch?v=9KBt4d59lTM]
 
-Try our [live demo](https://woo.personalbridge.com/)
+Visit our [live demo website](https://woo.personalbridge.com/)
 
-Website: [Plugin site](https://personalbridge.com/)
+Visit our: [Official Website](https://personalbridge.com/)
 
 Privacy Policies: [Privacy Policies](https://personalbridge.com/privacy-policy/)
 
@@ -31,9 +31,9 @@ Terms & Conditions: [Terms & Conditions](https://personalbridge.com/terms-condit
 ### View our tutorial videos
 [youtube https://www.youtube.com/channel/UCANC566iEL-1ecyQ9uQ-gyQ]
 
-Note: Pluign not support with website on localhost
+Note: This plugin does not support with website on localhost
 
-### Powers features
+### Power features
 + Upload cliparts from folder
 + Create mockup from PSD
 + Artwork Templates from PSD
@@ -69,11 +69,16 @@ View document online [https://support.personalbridge.com](https://support.person
 8. A screenshot of Live Preview
 
 == Changelog ==
+= 1.0.1 =
+* IMPROVED: Check is using flatsome theme.
 
 = 1.0.0 =
 * Release.
 
 == Upgrade notice ==
+= 1.0.1 =
+This version requires PHP 5.6 or newer.
+
 = 1.0.0 =
 This version requires PHP 5.6 or newer.
 

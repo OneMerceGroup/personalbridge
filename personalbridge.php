@@ -2,7 +2,7 @@
 /**
  * Plugin Name: PersonalBridge
  * Description: Design, sell, and print personal products faster plugin for WooCommerce.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Text Domain: personalbridge
  * Domain Path: /languages
  * Author: PersonalBridge
@@ -159,7 +159,7 @@ class PersonalBridge {
 					if ( $replace_symbol_back ) {
 						$money_format = str_replace( '{{symbol_code}}', $symbol_code, $money_format );
 					}
-					$js_code .= 'window.money_format=\'' . $money_format . '\';';
+					$js_code = 'window.money_format=\'' . $money_format . '\';';
 					wp_add_inline_script( 'personalbridge-script', $js_code );
 				}
 			}
