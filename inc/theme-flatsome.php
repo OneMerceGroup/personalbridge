@@ -8,7 +8,7 @@ class PersonalBridge_Theme_Flatsome extends PersonalBridge_Theme_Base {
 		}
 		return self::$_instance;
 	}
-
+	
 	public function custom_hooks() {
 		// woocommerce_before_main_content.
 		add_action( 'woocommerce_single_product_summary', array( $this, 'woo_single_product_summary_open' ), 0 );
@@ -16,8 +16,8 @@ class PersonalBridge_Theme_Flatsome extends PersonalBridge_Theme_Base {
 		// woocommerce_after_main_content.
 		add_action( 'woocommerce_single_product_summary', array( $this, 'woo_single_product_summary_close' ), PHP_INT_MAX );
 
-		add_filter( 'personalbridge_wrapper_class', array( $this, 'nf-product-single' ), 20, 1 );
-		add_filter( 'personalbridge_wrapper_id', array( $this, 'personalbridge-product-section' ), 20, 1 );
+		add_filter( 'personalbridge_wrapper_class', array( $this, 'modify_wrapper_class' ), 20, 1 );
+		add_filter( 'personalbridge_wrapper_id', array( $this, 'modify_wrapper_id' ), 20, 1 );
 
 		add_action( 'personalbridge_before_single_summary', array( $this, 'before_single_summary' ), 20 );
 	}
@@ -31,7 +31,7 @@ class PersonalBridge_Theme_Flatsome extends PersonalBridge_Theme_Base {
 		return $class;
 	}
 
-	public function modify_wrapper_ids( $id ) {
+	public function modify_wrapper_id( $id ) {
 		$id = 'personalbridge-product-section-gallery';
 		return $id;
 	}

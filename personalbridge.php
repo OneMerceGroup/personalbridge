@@ -34,7 +34,15 @@ require_once PERSONALBRIDGE_DIR . 'inc/theme-flatsome.php';
 
 class PersonalBridge {
 	public function __construct() {
-		add_action( 'woocommerce_after_add_to_cart_form', array( $this, 'woo_after_add_to_cart_form' ), 10, 2 );
+		add_action( 'plugins_loaded', array( $this, 'init' ), 10 );
+	}
+
+	public function init() {
+		if ( personalbridge_helper()->is_flatsome() ) {
+			personalbridge_theme_flatsome();
+		} else {
+			personalbridge_theme_normal();
+		}
 	}
 
 }

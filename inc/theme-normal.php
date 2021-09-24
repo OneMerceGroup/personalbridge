@@ -8,11 +8,10 @@ class PersonalBridge_Theme_Normal extends PersonalBridge_Theme_Base {
 		}
 		return self::$_instance;
 	}
-
-	public function __construct() {
+	
+	public function custom_hooks() {
 
 	}
-
 }
 
 function personalbridge_theme_normal() {

@@ -1,5 +1,7 @@
 <?php
 abstract class PersonalBridge_Theme_Base {
+	
+
 	public function __construct() {
 		add_action( 'woocommerce_after_add_to_cart_form', array( $this, 'woo_after_add_to_cart_form' ), 10, 2 );
 		add_action( 'wp_enqueue_scripts', array( $this, 'wp_enqueue_scripts' ) );
@@ -11,7 +13,6 @@ abstract class PersonalBridge_Theme_Base {
 		add_filter( 'woocommerce_get_item_data', array( $this, 'woo_get_item_data' ), 25, 2 );
 		add_action( 'woocommerce_add_order_item_meta', array( $this, 'woo_add_order_item_meta' ), 10, 2 );
 
-		
 		$this->custom_hooks();
 	}
 
@@ -116,7 +117,7 @@ abstract class PersonalBridge_Theme_Base {
 					if ( $replace_symbol_back ) {
 						$money_format = str_replace( '{{symbol_code}}', $symbol_code, $money_format );
 					}
-					$js_code .= 'window.money_format=\'' . $money_format . '\';';
+					$js_code = 'window.money_format=\'' . $money_format . '\';';
 					wp_add_inline_script( 'personalbridge-script', $js_code );
 				}
 			}
