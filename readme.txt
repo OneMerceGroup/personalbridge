@@ -20,13 +20,13 @@ The <strong>PersonalBridge</strong> is a plugin for WooCommerce, this plugin all
 
 [youtube https://www.youtube.com/watch?v=9KBt4d59lTM]
 
-Visit our: [demo store](https://woo.personalbridge.com/)
+Visit our: [Demo store](https://woo.personalbridge.com/)
 
-Visit our: [official website](https://personalbridge.com/)
+Visit our: [Official website](https://personalbridge.com/)
 
-Privacy policies: [privacy policies](https://personalbridge.com/privacy-policy/)
+Privacy Policies: [Privacy policies](https://personalbridge.com/privacy-policy/)
 
-Terms & conditions: [terms & conditions](https://personalbridge.com/terms-conditions/)
+Terms & Conditions: [Terms & conditions](https://personalbridge.com/terms-conditions/)
 
 ### View our tutorial videos
 [youtube https://www.youtube.com/channel/UCANC566iEL-1ecyQ9uQ-gyQ]
@@ -47,7 +47,7 @@ Note: This plugin does not support with website on localhost
 
 1. Upload `personalbridge` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Create an account on [https://dashboard.merchbridge.com](https://dashboard.merchbridge.com) and follow our [step by step tutorial](https://support.personalbridge.com/vi/article/connect-store-moi-vao-personalbridge-app-10t3a8j/#2-connect-woocommerce-voi-personalbridge-app) on how to connect PersonalBridge with your WooCommerce store.
+3. Create an account on [https://dashboard.merchbridge.com](https://dashboard.merchbridge.com) and complete install.
 
 == Frequently asked questions ==
 

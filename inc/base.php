@@ -1,7 +1,5 @@
 <?php
 abstract class PersonalBridge_Theme_Base {
-	
-
 	public function __construct() {
 		add_action( 'woocommerce_after_add_to_cart_form', array( $this, 'woo_after_add_to_cart_form' ), 10, 2 );
 		add_action( 'wp_enqueue_scripts', array( $this, 'wp_enqueue_scripts' ) );
