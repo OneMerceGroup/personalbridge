@@ -1,12 +1,15 @@
 <?php
 abstract class PersonalBridge_Theme_Base {
 	public function __construct() {
-		add_action( 'woocommerce_after_add_to_cart_form', array( $this, 'woo_after_add_to_cart_form' ), 10, 2 );
+		// add_filter( 'woocommerce_get_price_html', array( $this, 'woo_price_html' ), 20, 1 );
+
+		add_action( 'woocommerce_before_add_to_cart_form', array( $this, 'woo_before_add_to_cart_form' ), 1, 0 );
+		add_action( 'woocommerce_after_add_to_cart_form', array( $this, 'woo_after_add_to_cart_form' ), 10, 0 );
+
 		add_action( 'wp_enqueue_scripts', array( $this, 'wp_enqueue_scripts' ) );
-		add_filter( 'woocommerce_get_price_html', array( $this, 'woo_price_html' ), 20, 1 );
-		add_action( 'woocommerce_before_add_to_cart_form', array( $this, 'before_add_to_cart' ) );
-		add_action( 'woocommerce_before_single_product_summary', array( $this, 'woo_before_single_product_summary' ), 0 );
-		add_action( 'woocommerce_product_meta_end', array( $this, 'woo_product_meta_end' ), 11 );
+
+		add_action( 'woocommerce_before_single_product_summary', array( $this, 'woo_before_single_product_summary' ), 0, 0);
+		add_action( 'woocommerce_product_meta_end', array( $this, 'woo_product_meta_end' ), 11, 0 );
 		add_filter( 'woocommerce_add_cart_item_data', array( $this, 'woo_add_cart_item_data' ), 25, 2 );
 		add_filter( 'woocommerce_get_item_data', array( $this, 'woo_get_item_data' ), 25, 2 );
 		add_action( 'woocommerce_add_order_item_meta', array( $this, 'woo_add_order_item_meta' ), 10, 2 );
@@ -73,7 +76,7 @@ abstract class PersonalBridge_Theme_Base {
 		do_action( 'personalbridge_before_single_summary' );
 	}
 
-	public function before_add_to_cart() {
+	public function woo_before_add_to_cart_form() {
 		if ( ! $this->is_pb() ) {
 			return;
 		}
@@ -82,7 +85,7 @@ abstract class PersonalBridge_Theme_Base {
 
 	public function woo_price_html( $price ) {
 		if ( $this->is_pb() ) {
-			return;
+			return '';
 		}
 		return $price;
 	}

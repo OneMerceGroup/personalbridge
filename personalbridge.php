@@ -2,7 +2,7 @@
 /**
  * Plugin Name: PersonalBridge
  * Description: Design, sell, and print personal products faster plugin for WooCommerce.
- * Version: 1.0.0
+ * Version: 1.0.3
  * Text Domain: personalbridge
  * Domain Path: /languages
  * Author: PersonalBridge
