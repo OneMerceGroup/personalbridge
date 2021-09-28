@@ -9,7 +9,7 @@ Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Design, sell, and print personal products faster plugin for WooCommerce with PersonalBridge
+A plugin for WooCommerce with PersonalBridge help design, sell, and print personal products faster.
 
 == Description ==
 The <strong>PersonalBridge</strong> is a plugin for WooCommerce, this plugin allows you sell personalized print-on-demand products on WooComemrce. Your customer can change text, change clipart, upload custom photo and live preview before buying.
