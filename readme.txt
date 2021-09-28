@@ -5,7 +5,7 @@ Tags: woocommerce, personalbridge, personalized, product personalizer, product d
 Requires at least: 5.8
 Requires PHP: 5.6
 Tested up to: 5.8
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,13 +20,13 @@ The <strong>PersonalBridge</strong> is a plugin for WooCommerce, this plugin all
 
 [youtube https://www.youtube.com/watch?v=9KBt4d59lTM]
 
-Visit our [live demo website](https://woo.personalbridge.com/)
+Visit our: [Demo store](https://woo.personalbridge.com/)
 
-Visit our: [Official Website](https://personalbridge.com/)
+Visit our: [Official website](https://personalbridge.com/)
 
-Privacy Policies: [Privacy Policies](https://personalbridge.com/privacy-policy/)
+Privacy Policies: [Privacy policies](https://personalbridge.com/privacy-policy/)
 
-Terms & Conditions: [Terms & Conditions](https://personalbridge.com/terms-conditions/)
+Terms & Conditions: [Terms & conditions](https://personalbridge.com/terms-conditions/)
 
 ### View our tutorial videos
 [youtube https://www.youtube.com/channel/UCANC566iEL-1ecyQ9uQ-gyQ]
@@ -69,6 +69,9 @@ View document online [https://support.personalbridge.com](https://support.person
 8. A screenshot of Live Preview
 
 == Changelog ==
+= 1.0.3 =
+* FIXED: Minor issues.
+
 = 1.0.2 =
 * UPDATED: The plugin stable tag.
 
@@ -84,6 +87,4 @@ This version requires PHP 5.6 or newer.
 
 = 1.0.0 =
 This version requires PHP 5.6 or newer.
-
-
 
