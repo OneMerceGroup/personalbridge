@@ -88,4 +88,3 @@ This version requires PHP 5.6 or newer.
 = 1.0.0 =
 This version requires PHP 5.6 or newer.
 
-
