@@ -16,7 +16,7 @@ if ( ! defined( 'PERSONALBRIDGE_APIS' ) ) {
 	define( 'PERSONALBRIDGE_APIS', 'https://apis.personalbridge.com/' );
 }
 if ( ! defined( 'PERSONALBRIDGE_THEME_VER' ) ) {
-	define( 'PERSONALBRIDGE_THEME_VER', '1.0.0' );
+	define( 'PERSONALBRIDGE_THEME_VER', '1.0.3' );
 }
 
 if ( ! defined( 'PERSONALBRIDGE_URL' ) ) {
