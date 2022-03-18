@@ -4,8 +4,8 @@ Donate link: https://personalbridge.com/
 Tags: woocommerce, personalbridge, personalized, product personalizer, product designer, web to print, customize product, POD product, Print‑on‑Demand, fulfillment
 Requires at least: 5.8
 Requires PHP: 5.6
-Tested up to: 5.8
-Stable tag: 1.0.3
+Tested up to: 5.9.2
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -69,6 +69,9 @@ View document online [https://support.personalbridge.com](https://support.person
 8. A screenshot of Live Preview
 
 == Changelog ==
+= 1.0.4 =
+* FIXED: Minor issues.
+
 = 1.0.3 =
 * FIXED: Minor issues.
 

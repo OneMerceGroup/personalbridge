@@ -146,6 +146,4 @@ abstract class PersonalBridge_Theme_Base {
 		}
 		return false;
 	}
-
-
 }
