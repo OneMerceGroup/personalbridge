@@ -4,8 +4,8 @@ Donate link: https://personalbridge.com/
 Tags: woocommerce, personalbridge, personalized, product personalizer, product designer, web to print, customize product, POD product, Print‑on‑Demand, fulfillment
 Requires at least: 5.8
 Requires PHP: 5.6
-Tested up to: 5.9.2
-Stable tag: 1.0.4
+Tested up to: 6.3.1
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,8 +19,6 @@ The <strong>PersonalBridge</strong> is a plugin for WooCommerce, this plugin all
 <strong>Fulfillment services integrations:</strong> import product catalogs from your favorite fulfillment services and create personalized campaigns using PersonalBridge. Your orders are fulfilled and shipped by your favorite services such as Customcat, Gearment, Dreamship, Scalable Press, Merchize... We also provide custom order CSV with ready-to-print files for other fulfillments such as Printify, Printful ....
 
 [youtube https://www.youtube.com/watch?v=9KBt4d59lTM]
-
-Visit our: [Demo store](https://woo.personalbridge.com/)
 
 Visit our: [Official website](https://personalbridge.com/)
 
@@ -69,6 +67,9 @@ View document online [https://support.personalbridge.com](https://support.person
 8. A screenshot of Live Preview
 
 == Changelog ==
+= 1.0.5 =
+* FIXED: Minor issues.
+
 = 1.0.4 =
 * FIXED: Minor issues.
 
