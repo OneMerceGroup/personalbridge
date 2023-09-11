@@ -47,7 +47,7 @@ Note: This plugin does not support with website on localhost
 
 1. Upload `personalbridge` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Create an account on [https://dashboard.merchbridge.com](https://dashboard.merchbridge.com) and complete install.
+3. Create an account on [https://dashboard.personalbridge.com/](https://dashboard.personalbridge.com/) and complete install.
 
 == Frequently asked questions ==
 
