@@ -2,7 +2,7 @@
 /**
  * Plugin Name: PersonalBridge
  * Description: Design, sell, and print personal products faster plugin for WooCommerce.
- * Version: 1.0.5
+ * Version: 1.0.6
  * Text Domain: personalbridge
  * Domain Path: /languages
  * Author: PersonalBridge
@@ -31,6 +31,7 @@ require_once PERSONALBRIDGE_DIR . 'inc/helper.php';
 require_once PERSONALBRIDGE_DIR . 'inc/base.php';
 require_once PERSONALBRIDGE_DIR . 'inc/theme-normal.php';
 require_once PERSONALBRIDGE_DIR . 'inc/theme-flatsome.php';
+require_once PERSONALBRIDGE_DIR . 'inc/theme-shoptimizer.php';
 
 class PersonalBridge {
 	public function __construct() {
@@ -38,8 +39,11 @@ class PersonalBridge {
 	}
 
 	public function init() {
+
 		if ( personalbridge_helper()->is_flatsome() ) {
 			personalbridge_theme_flatsome();
+		} else if ( personalbridge_helper()->is_shoptimizer() ) {
+			personalbridge_theme_shoptimizer();
 		} else {
 			personalbridge_theme_normal();
 		}

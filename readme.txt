@@ -67,6 +67,9 @@ View document online [https://support.personalbridge.com](https://support.person
 8. A screenshot of Live Preview
 
 == Changelog ==
+= 1.0.6 =
+* NEW: Support theme Shoptimizer.
+
 = 1.0.5 =
 * FIXED: Minor issues.
 
@@ -91,4 +94,3 @@ This version requires PHP 5.6 or newer.
 
 = 1.0.0 =
 This version requires PHP 5.6 or newer.
-

@@ -27,3 +27,31 @@
 .single-product .nf-product-single .price{
 	display: none!important;
 }
+
+.theme-shoptimizer .nf-product-single #personalized-form select {
+	padding: 0 10px;
+	width: 100%;
+}
+.theme-shoptimizer .nf-product-single #personalized-form input {
+	padding: 6px 10px;
+	width: 100%;
+}
+
+.theme-shoptimizer #personalized-form .btn-preview {
+	margin-bottom: 20px;
+}
+
+.theme-shoptimizer .add-to-cart-group .cart-qty input, 
+.theme-shoptimizer .add-to-cart-group .cart-qty select {
+	height: 56px;
+}
+
+.theme-shoptimizer .add-to-cart-group .cart-qty label {
+	color: #333;
+    text-transform: capitalize;
+}
+
+.theme-shoptimizer #personalized-form .product-attributes {
+	width: 100%;
+    flex-direction: column;
+}
