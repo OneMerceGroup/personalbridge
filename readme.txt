@@ -1,7 +1,7 @@
 === PersonalBridge ===
 Contributors: personalbridge
 Donate link: https://personalbridge.com/
-Tags: woocommerce, personalbridge, personalized, product personalizer, product designer, web to print, customize product, POD product, Print‑on‑Demand, fulfillment
+Tags: personalized, product personalizer, customize product, Print‑on‑Demand, fulfillment
 Requires at least: 5.8
 Requires PHP: 5.6
 Tested up to: 6.3.1
